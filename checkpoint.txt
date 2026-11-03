@@ -1,0 +1,19 @@
+Part 1: Weak spots (20 min)
+
+Open notes/weak-spots.md (or think back to the commands you had to look up on Day 6). For each item, run the command again from memory and add one line to notes/commands.md with what it does and one example. If the list is empty, pick the two topics you felt least sure about from Days 2-4 and redo one task from each.
+
+Part 2: Sunday checkpoint (30 min)
+
+Do all five without notes. Time yourself.
+
+Permissions: Create a group checkgrp and users u1 and u2, with only u1 in the group.
+ Create /opt/checkdir so only the group can read and write it.
+ Prove u1 can create a file and u2 gets “Permission denied”.
+Meaning: In one sentence, what does chmod 640 file do? What does rwxr-x--- equal in numbers?
+Logs: From logs/app.log, 
+find the number of ERROR lines, and which IP and which error message appear most.
+Processes: Start sleep 400 &, find its PID, stop it politely, and confirm it’s gone. 
+Then explain when you’d use kill -9.
+Services: Install nginx, start it, prove it’s listening on port 80, stop it, and show what “Connection refused” looks like. Explain what it means.
+
+Clean up afterward with userdel -r, groupdel and rm -r.
